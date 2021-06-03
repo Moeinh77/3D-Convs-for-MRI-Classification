@@ -6,7 +6,7 @@ I have used the IXI Brain MRI dataset that each image has 150 slices and it is a
 
 ### Model:
 
-I tested 3 Diferent models for this classification task:
+I tested 3 different models for this classification task:
 
 * DenseNet169_3D
 * DenseNet121_2D
