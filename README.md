@@ -3,7 +3,7 @@ Gender classification on 3D IXI Brain MRI dataset
 
 ### Dataset:
 
-I have used IXI Brain MRI dataset that each image has 150 slices and it is available (https://brain-development.org/ixi-dataset/)[here]. I downloaded the T1 images and used 80% percent of it for training and 20% for test/validtion. Since the data only contains 566 images I had to keep the test set at 20% and had to use the test set for both validation and test.
+I have used IXI Brain MRI dataset that each image has 150 slices and it is available [here](https://brain-development.org/ixi-dataset/). I downloaded the T1 images and used 80% percent of it for training and 20% for test/validtion. Since the data only contains 566 images I had to keep the test set at 20% and had to use the test set for both validation and test. Since the data has a high number of channels (150 channels) it coul not be loaded into the RAM all at once, so for training of the first model I created a datagenerator that yields 4 images at the time. I used nibabel library for reading the .nii images in this dataset. 
 
 
 ### Model:
@@ -14,7 +14,7 @@ I tested 3 Diferent models for this classification task:
 * DenseNet121_2D
 * DenseNet169_2D
 
-The first Model can be downloaded from (https://github.com/GalDude33/DenseNetFCN-3D)[this] repository, and the two others are avaialbe through TensorFlow. The 3D model was trained from scratch while the two others had pretrained weights.
+The first Model can be downloaded from [this](https://github.com/GalDude33/DenseNetFCN-3D) repository, and the two others are avaialbe through TensorFlow. The 3D model was trained from scratch while the two others had pretrained weights.
 
 ### Results:
 
