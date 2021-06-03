@@ -18,7 +18,7 @@ The first Model can be downloaded from [this](https://github.com/GalDude33/Dense
 
 * The images in this dataset have a high number of channels and processing them requires a huge amount of RAM and GPU
 * Using 3D convolutions requires more GPU and they are the calculations are more time consuming
-* Lack of examples projects about feeding .nii files to Keras models on the internet
+* Lack of example projects regarding feeding .nii files to Keras models on the internet and the use of 3D networks
 
 ### Results:
 
