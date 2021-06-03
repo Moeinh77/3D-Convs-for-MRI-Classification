@@ -1,4 +1,4 @@
-# Brain_MRI_Geder_Classification
+# Brain_MRI_Gender_Classification
 
 ### Dataset:
 
