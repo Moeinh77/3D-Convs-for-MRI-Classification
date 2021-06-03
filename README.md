@@ -1,4 +1,4 @@
-# MRI-Geder_Classification
+# Brain_MRI_Geder_Classification
 
 ### Dataset:
 
