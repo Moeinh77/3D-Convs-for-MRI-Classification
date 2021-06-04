@@ -22,4 +22,8 @@ The first Model can be downloaded from [this](https://github.com/GalDude33/Dense
 
 ### Results:
 
-The 3D model used 80 slices from 150 (slices 35 to 115), and it's training took about 74 minutes on Google Colab, and it reached 83% on the training set and 75% on the test set. However, DenseNet121 managed to reach 94% on the training set and 92% on the test set and DenseNet169 96% on the training set and 92% on the test set. The 2D models only used 3 slices from 150 slices (slices 74,75,76), and they achieved better results which indicates the importance of pretraining when the dataset is small. The results of the two 2D convNets can be improved by using regularization techniques. Moreover, I discovered using augmentations such as rotation, zoom, shift, etc makes the results worse and cause undefitting in DenseNet121_2D.
+The 3D model used 80 slices from 150 (slices 35 to 115), and it's training took about 74 minutes on Google Colab, and it reached 93% on the training set and 93% on the test set. However, DenseNet121 managed to reach 94% on the training set and 92% on the test set and DenseNet169 96% on the training set and 92% on the test set. The 2D models only used 3 slices from 150 slices (slices 74,75,76), and they achieved better results which indicates the importance of pretraining when the dataset is small. The results of the two 2D convNets can be improved by using regularization techniques. Moreover, I discovered using augmentations such as rotation, zoom, shift, etc makes the results worse and cause undefitting in DenseNet121_2D.
+
+### Conclusion:
+
+All three of the models achieve nearly the same results, however the 3D model takes much more time to train. We can always first try to use few slices like the 3 median slices with simpler models and then move to more complicated models. 
